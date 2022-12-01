@@ -1,0 +1,14 @@
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\bin\Debug\net6.0\kutuphane.deps.json
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\bin\Debug\net6.0\kutuphane.runtimeconfig.json
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\bin\Debug\net6.0\kutuphane.dll
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\bin\Debug\net6.0\kutuphane.pdb
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.csproj.AssemblyReference.cache
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.AssemblyInfoInputs.cache
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.AssemblyInfo.cs
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.csproj.CoreCompileInputs.cache
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.dll
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\refint\kutuphane.dll
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.pdb
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\kutuphane.genruntimeconfig.cache
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphane\obj\Debug\net6.0\ref\kutuphane.dll

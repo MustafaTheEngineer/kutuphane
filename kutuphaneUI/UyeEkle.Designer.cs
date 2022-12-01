@@ -35,11 +35,14 @@
             this.soyadGirdisi = new System.Windows.Forms.TextBox();
             this.meslekGirdisi = new System.Windows.Forms.TextBox();
             this.uyeEkleButonu = new System.Windows.Forms.Button();
+            this.uyeListesi = new System.Windows.Forms.ListBox();
+            this.uyeDuzenleButonu = new System.Windows.Forms.Button();
+            this.uyeSilButonu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // adGirdisi
             // 
-            this.adGirdisi.Location = new System.Drawing.Point(360, 119);
+            this.adGirdisi.Location = new System.Drawing.Point(140, 123);
             this.adGirdisi.Name = "adGirdisi";
             this.adGirdisi.Size = new System.Drawing.Size(125, 27);
             this.adGirdisi.TabIndex = 0;
@@ -47,7 +50,7 @@
             // adEtiketi
             // 
             this.adEtiketi.AutoSize = true;
-            this.adEtiketi.Location = new System.Drawing.Point(293, 122);
+            this.adEtiketi.Location = new System.Drawing.Point(64, 126);
             this.adEtiketi.Name = "adEtiketi";
             this.adEtiketi.Size = new System.Drawing.Size(28, 20);
             this.adEtiketi.TabIndex = 1;
@@ -56,7 +59,7 @@
             // soyadEtiketi
             // 
             this.soyadEtiketi.AutoSize = true;
-            this.soyadEtiketi.Location = new System.Drawing.Point(293, 169);
+            this.soyadEtiketi.Location = new System.Drawing.Point(64, 169);
             this.soyadEtiketi.Name = "soyadEtiketi";
             this.soyadEtiketi.Size = new System.Drawing.Size(50, 20);
             this.soyadEtiketi.TabIndex = 2;
@@ -66,7 +69,7 @@
             // meslekEtiketi
             // 
             this.meslekEtiketi.AutoSize = true;
-            this.meslekEtiketi.Location = new System.Drawing.Point(293, 214);
+            this.meslekEtiketi.Location = new System.Drawing.Point(64, 214);
             this.meslekEtiketi.Name = "meslekEtiketi";
             this.meslekEtiketi.Size = new System.Drawing.Size(55, 20);
             this.meslekEtiketi.TabIndex = 3;
@@ -74,33 +77,65 @@
             // 
             // soyadGirdisi
             // 
-            this.soyadGirdisi.Location = new System.Drawing.Point(360, 166);
+            this.soyadGirdisi.Location = new System.Drawing.Point(140, 166);
             this.soyadGirdisi.Name = "soyadGirdisi";
             this.soyadGirdisi.Size = new System.Drawing.Size(125, 27);
             this.soyadGirdisi.TabIndex = 4;
             // 
             // meslekGirdisi
             // 
-            this.meslekGirdisi.Location = new System.Drawing.Point(360, 211);
+            this.meslekGirdisi.Location = new System.Drawing.Point(140, 211);
             this.meslekGirdisi.Name = "meslekGirdisi";
             this.meslekGirdisi.Size = new System.Drawing.Size(125, 27);
             this.meslekGirdisi.TabIndex = 5;
             // 
             // uyeEkleButonu
             // 
-            this.uyeEkleButonu.Location = new System.Drawing.Point(320, 321);
+            this.uyeEkleButonu.Location = new System.Drawing.Point(140, 319);
             this.uyeEkleButonu.Name = "uyeEkleButonu";
-            this.uyeEkleButonu.Size = new System.Drawing.Size(136, 50);
+            this.uyeEkleButonu.Size = new System.Drawing.Size(125, 50);
             this.uyeEkleButonu.TabIndex = 6;
             this.uyeEkleButonu.Text = "Ekle";
             this.uyeEkleButonu.UseVisualStyleBackColor = true;
             this.uyeEkleButonu.Click += new System.EventHandler(this.uyeEkleButonu_Click);
+            // 
+            // uyeListesi
+            // 
+            this.uyeListesi.FormattingEnabled = true;
+            this.uyeListesi.ItemHeight = 20;
+            this.uyeListesi.Location = new System.Drawing.Point(360, 85);
+            this.uyeListesi.Name = "uyeListesi";
+            this.uyeListesi.Size = new System.Drawing.Size(277, 284);
+            this.uyeListesi.TabIndex = 7;
+            // 
+            // uyeDuzenleButonu
+            // 
+            this.uyeDuzenleButonu.Location = new System.Drawing.Point(663, 85);
+            this.uyeDuzenleButonu.Name = "uyeDuzenleButonu";
+            this.uyeDuzenleButonu.Size = new System.Drawing.Size(125, 50);
+            this.uyeDuzenleButonu.TabIndex = 8;
+            this.uyeDuzenleButonu.Text = "Düzenle";
+            this.uyeDuzenleButonu.UseVisualStyleBackColor = true;
+            this.uyeDuzenleButonu.Click += new System.EventHandler(this.uyeDuzenleButonu_Click);
+            // 
+            // uyeSilButonu
+            // 
+            this.uyeSilButonu.Location = new System.Drawing.Point(663, 184);
+            this.uyeSilButonu.Name = "uyeSilButonu";
+            this.uyeSilButonu.Size = new System.Drawing.Size(125, 50);
+            this.uyeSilButonu.TabIndex = 9;
+            this.uyeSilButonu.Text = "Sil";
+            this.uyeSilButonu.UseVisualStyleBackColor = true;
+            this.uyeSilButonu.Click += new System.EventHandler(this.uyeSilButonu_Click);
             // 
             // UyeEkle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.uyeSilButonu);
+            this.Controls.Add(this.uyeDuzenleButonu);
+            this.Controls.Add(this.uyeListesi);
             this.Controls.Add(this.uyeEkleButonu);
             this.Controls.Add(this.meslekGirdisi);
             this.Controls.Add(this.soyadGirdisi);
@@ -124,5 +159,8 @@
         private TextBox soyadGirdisi;
         private TextBox meslekGirdisi;
         private Button uyeEkleButonu;
+        private ListBox uyeListesi;
+        private Button uyeDuzenleButonu;
+        private Button uyeSilButonu;
     }
 }

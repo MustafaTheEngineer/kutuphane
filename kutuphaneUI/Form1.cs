@@ -12,5 +12,11 @@ namespace kutuphaneUI
             UyeEkle uyeEkle = new UyeEkle();
             uyeEkle.Show(this);
         }
+
+        private void kitapEkleMenuButonu_Click(object sender, EventArgs e)
+        {
+            KitapEkle kitapEkle = new KitapEkle();
+            kitapEkle.Show(this);
+        }
     }
 }

@@ -39,7 +39,7 @@
             this.uyeEkleMenuButonu.Name = "uyeEkleMenuButonu";
             this.uyeEkleMenuButonu.Size = new System.Drawing.Size(177, 80);
             this.uyeEkleMenuButonu.TabIndex = 0;
-            this.uyeEkleMenuButonu.Text = "Üye Ekle";
+            this.uyeEkleMenuButonu.Text = "Üye Ayarları";
             this.uyeEkleMenuButonu.UseVisualStyleBackColor = true;
             this.uyeEkleMenuButonu.Click += new System.EventHandler(this.uyeEkleMenuButonu_Click);
             // 
@@ -49,8 +49,9 @@
             this.kitapEkleMenuButonu.Name = "kitapEkleMenuButonu";
             this.kitapEkleMenuButonu.Size = new System.Drawing.Size(177, 81);
             this.kitapEkleMenuButonu.TabIndex = 1;
-            this.kitapEkleMenuButonu.Text = "Kitap Ekle";
+            this.kitapEkleMenuButonu.Text = "Kitap Ayarları";
             this.kitapEkleMenuButonu.UseVisualStyleBackColor = true;
+            this.kitapEkleMenuButonu.Click += new System.EventHandler(this.kitapEkleMenuButonu_Click);
             // 
             // Form1
             // 

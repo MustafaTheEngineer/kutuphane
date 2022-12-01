@@ -25,3 +25,7 @@ C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\r
 C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\obj\Debug\net6.0-windows\kutuphaneUI.csproj.CopyComplete
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\EntityFramework.dll
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\kutuphane.dll
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\kutuphane.pdb
