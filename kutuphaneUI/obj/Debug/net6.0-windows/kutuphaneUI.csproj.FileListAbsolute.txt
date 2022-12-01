@@ -29,3 +29,4 @@ C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\E
 C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\EntityFramework.dll
 C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\kutuphane.dll
 C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\bin\Debug\net6.0-windows\kutuphane.pdb
+C:\Users\Esat\Desktop\kutuphane\kutuphane\kutuphaneUI\obj\Debug\net6.0-windows\kutuphaneUI.kitapUye.resources

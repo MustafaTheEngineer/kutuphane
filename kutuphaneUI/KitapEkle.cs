@@ -164,20 +164,19 @@ namespace kutuphaneUI
             cmd.ExecuteNonQuery();
             sqlConnection1.Close();
 
-            kitap yeni = new kitap()
-            {
-                ID = id,
-                kitapAdi = kitapAdiGirdisi.Text,
-                yazar = yazarGirdisi.Text,
-                tur = turGirdisi.Text,
-                sayfa = int.Parse( sayfaGirdisi.Text),
-                uygunluk = true
-            };
-
             for (int i=0; i < kitaplar.Count; ++i)
             {
                 if (kitaplar[i].ID == id)
                 {
+                    kitap yeni = new kitap()
+                    {
+                        ID = id,
+                        kitapAdi = kitapAdiGirdisi.Text,
+                        yazar = yazarGirdisi.Text,
+                        tur = turGirdisi.Text,
+                        sayfa = int.Parse(sayfaGirdisi.Text),
+                        uygunluk = kitaplar[i].uygunluk,
+                    };
                     kitaplar[i] = yeni;
                     break;
                 }

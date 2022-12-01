@@ -18,5 +18,11 @@ namespace kutuphaneUI
             KitapEkle kitapEkle = new KitapEkle();
             kitapEkle.Show(this);
         }
+
+        private void kitapUyeMenuButonu_Click(object sender, EventArgs e)
+        {
+            kitapUye kitapUye = new kitapUye();
+            kitapUye.Show(this);
+        }
     }
 }

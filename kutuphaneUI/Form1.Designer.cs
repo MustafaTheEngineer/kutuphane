@@ -30,12 +30,13 @@
         {
             this.uyeEkleMenuButonu = new System.Windows.Forms.Button();
             this.kitapEkleMenuButonu = new System.Windows.Forms.Button();
+            this.kitapUyeMenuButonu = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // uyeEkleMenuButonu
             // 
             this.uyeEkleMenuButonu.AccessibleName = "";
-            this.uyeEkleMenuButonu.Location = new System.Drawing.Point(297, 112);
+            this.uyeEkleMenuButonu.Location = new System.Drawing.Point(74, 100);
             this.uyeEkleMenuButonu.Name = "uyeEkleMenuButonu";
             this.uyeEkleMenuButonu.Size = new System.Drawing.Size(177, 80);
             this.uyeEkleMenuButonu.TabIndex = 0;
@@ -45,7 +46,7 @@
             // 
             // kitapEkleMenuButonu
             // 
-            this.kitapEkleMenuButonu.Location = new System.Drawing.Point(297, 227);
+            this.kitapEkleMenuButonu.Location = new System.Drawing.Point(74, 229);
             this.kitapEkleMenuButonu.Name = "kitapEkleMenuButonu";
             this.kitapEkleMenuButonu.Size = new System.Drawing.Size(177, 81);
             this.kitapEkleMenuButonu.TabIndex = 1;
@@ -53,11 +54,23 @@
             this.kitapEkleMenuButonu.UseVisualStyleBackColor = true;
             this.kitapEkleMenuButonu.Click += new System.EventHandler(this.kitapEkleMenuButonu_Click);
             // 
+            // kitapUyeMenuButonu
+            // 
+            this.kitapUyeMenuButonu.AccessibleName = "";
+            this.kitapUyeMenuButonu.Location = new System.Drawing.Point(566, 100);
+            this.kitapUyeMenuButonu.Name = "kitapUyeMenuButonu";
+            this.kitapUyeMenuButonu.Size = new System.Drawing.Size(177, 80);
+            this.kitapUyeMenuButonu.TabIndex = 2;
+            this.kitapUyeMenuButonu.Text = "Kitap ve Üye";
+            this.kitapUyeMenuButonu.UseVisualStyleBackColor = true;
+            this.kitapUyeMenuButonu.Click += new System.EventHandler(this.kitapUyeMenuButonu_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.kitapUyeMenuButonu);
             this.Controls.Add(this.kitapEkleMenuButonu);
             this.Controls.Add(this.uyeEkleMenuButonu);
             this.Name = "Form1";
@@ -70,5 +83,6 @@
 
         private Button uyeEkleMenuButonu;
         private Button kitapEkleMenuButonu;
+        private Button kitapUyeMenuButonu;
     }
 }

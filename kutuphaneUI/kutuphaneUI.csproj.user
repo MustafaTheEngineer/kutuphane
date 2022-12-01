@@ -7,6 +7,9 @@
     <Compile Update="KitapEkle.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="kitapUye.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="UyeEkle.cs">
       <SubType>Form</SubType>
     </Compile>
