@@ -48,6 +48,25 @@ namespace kutuphaneUI
 
             sqlConnection1.Open();
             cmd.ExecuteNonQuery();
+            cmd.CommandText = $"SELECT ID,Ad,Soyad,Meslek,CezaPuani FROM dbo.tblUyeler WHERE Ad='{adGirdisi.Text}' AND Soyad='{soyadGirdisi.Text}' AND Meslek='{meslekGirdisi.Text}' AND CezaPuani=0";
+
+            using (SqlDataReader reader = cmd.ExecuteReader())
+            {
+                if (reader.Read())
+                {
+                    uye yeni = new uye
+                    {
+                        ID = (int)reader["ID"],
+                        ad = (string)reader["Ad"],
+                        soyad = (string)reader["Soyad"],
+                        meslek = (string)reader["Meslek"],
+                        cezaPuani = 0,
+                        bilgi = (string)reader["Ad"]
+                        + " " + (string)reader["Soyad"] + " - " + (string)reader["Meslek"],
+                    };
+                    uyeler.Add(yeni);
+                }
+            }
             sqlConnection1.Close();
 
             uyeListesi.DataSource = null;

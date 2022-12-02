@@ -184,8 +184,9 @@ namespace kutuphaneUI
             }
 
             
-            DateTime teslim = new DateTime(simdi.Year,ay,gun+14);
-            string aldigiTarih = $"{ simdi.Year }-{ay}-{gun} { simdi.Hour}:{ simdi.Minute}:00";
+            DateTime teslim = new DateTime(simdi.Year,ay,gun);
+            teslim.AddDays(14);
+            string aldigiTarih = $"{ simdi.Year }-{teslim.Month}-{teslim.Day} 00:00:00";
             string teslimTarihi = $"{teslim.Year}-{teslim.Month}-{teslim.Day} {teslim.Hour}:{teslim.Minute}:00";
             System.Data.SqlClient.SqlConnection sqlConnection1 =
             new System.Data.SqlClient.SqlConnection("Server=.\\SQLEXPRESS;Database=kutuphane;Trusted_Connection=True;");
@@ -240,6 +241,8 @@ namespace kutuphaneUI
 
             sqlConnection1.Close();
 
+
+
             for (int i = 0; i < kitaplar.Count; i++)
             {
                 if (kitaplar[i].ID == KitapID)
@@ -247,6 +250,14 @@ namespace kutuphaneUI
                     kitaplar[i].uygunluk = false;
                     kitaplar[i].bilgi += " - Verildi";
                     break;
+                }
+            }
+
+            for (int i = 0; i < musaitKitaplar.Count; i++)
+            {
+                if(musaitKitaplar[i].ID == KitapID)
+                {
+                    musaitKitaplar.RemoveAt(i); break;
                 }
             }
 
@@ -313,7 +324,7 @@ namespace kutuphaneUI
             {
                 if (iade.ID == takipler[i].kitapID)
                 {
-                    if (simdi > takipler[i].teslimTarihi)
+                    if (takipler[i].geldigiTarih > takipler[i].teslimTarihi)
                         cezaKontrol = true;
                     uyeID = takipler[i].uyeID;
                     takipID = takipler[i].ID;
@@ -398,6 +409,24 @@ namespace kutuphaneUI
             DateTime simdi = DateTime.Now;
             gunGirdisi.Text = simdi.Day.ToString();
             ayGirdisi.Text = simdi.Month.ToString();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(checkBox1.Checked == true)
+            {
+                kitapListesi.DataSource = null;
+                kitapListesi.DataSource = musaitKitaplar;
+                kitapListesi.DisplayMember = "bilgi";
+                kitapListesi.ValueMember = "ID";
+            }
+            else
+            {
+                kitapListesi.DataSource = null;
+                kitapListesi.DataSource = kitaplar;
+                kitapListesi.DisplayMember = "bilgi";
+                kitapListesi.ValueMember = "ID";
+            }
         }
     }
 }
